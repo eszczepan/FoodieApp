@@ -17,8 +17,8 @@ namespace FoodieApp.Data
                 restaurants = new List<Restaurant>()
                 {
                     new Restaurant {Id = 1, Name = "Thomas's Pizza", Location = "Palermo", Cuisine = CuisineType.Italian},
-                    new Restaurant {Id = 2, Name = "Crispy Chicken", Location = "California", Cuisine = CuisineType.Indian},
-                    new Restaurant {Id = 3, Name = "Dumplings", Location = "Cracow", Cuisine = CuisineType.Polish},
+                    new Restaurant {Id = 2, Name = "Phong Dong", Location = "California", Cuisine = CuisineType.Indian},
+                    new Restaurant {Id = 3, Name = "The Dumplings", Location = "Cracow", Cuisine = CuisineType.Polish},
                 };
             }
             public IEnumerable<Restaurant> GetAll()

@@ -4,6 +4,20 @@
 }
 
 <h1>Restarants</h1>
+
+<form method="get">
+    <div class="form-group">
+        <div class="input-group">
+            <input type="search" class="form-control" value="" name="" />
+            <span class="input-group-btn">
+                <button type="button" class="btn btn-outline-secondary">
+                    <i class="fa fa-search"></i>
+                </button>
+            </span>
+        </div>
+    </div>
+</form>
+
    <table class="table">
        @foreach(var restaurant in Model.Restaurants)
         {
