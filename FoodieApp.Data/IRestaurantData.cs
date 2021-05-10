@@ -8,7 +8,7 @@ namespace FoodieApp.Data
 {
     public interface IRestaurantData
     {
-        IEnumerable<Restaurant> GetAll();
+        IEnumerable<Restaurant> GetRestaurantsByName(string name);
         public class InMemoryRestaurantData : IRestaurantData
         {
             List<Restaurant> restaurants;
@@ -21,9 +21,10 @@ namespace FoodieApp.Data
                     new Restaurant {Id = 3, Name = "The Dumplings", Location = "Cracow", Cuisine = CuisineType.Polish},
                 };
             }
-            public IEnumerable<Restaurant> GetAll()
+            public IEnumerable<Restaurant> GetRestaurantsByName(string name = null)
             {
                 return from r in restaurants
+                       where string.IsNullOrEmpty(name) || r.Name.StartsWith(name)
                        orderby r.Name
                        select r;
             }
