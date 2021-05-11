@@ -5,9 +5,9 @@ VisualStudioVersion = 16.0.31205.134
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodieApp", "FoodieApp\FoodieApp.csproj", "{174EF073-57C1-401E-8EBA-246AF95EC2C4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodieApp.Core", "FoodieApp.Core\FoodieApp.Core.csproj", "{CA564124-0ACF-47AA-82D6-9E8C10112568}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodieApp.Core", "FoodieApp.Core\FoodieApp.Core.csproj", "{CA564124-0ACF-47AA-82D6-9E8C10112568}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FoodieApp.Data", "FoodieApp.Data\FoodieApp.Data.csproj", "{06337313-3D9C-473E-BF87-A5DB55C88CE1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FoodieApp.Data", "FoodieApp.Data\FoodieApp.Data.csproj", "{06337313-3D9C-473E-BF87-A5DB55C88CE1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
