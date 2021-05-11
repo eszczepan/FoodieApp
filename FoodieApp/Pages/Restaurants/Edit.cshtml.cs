@@ -37,9 +37,13 @@ namespace FoodieApp.Pages.Restaurants
 
         public IActionResult OnPost()
         {
-            Restaurant = restaurantData.Update(Restaurant);
-            restaurantData.Commit();
-            return Page();
+            if(ModelState.IsValid)
+            {
+                restaurantData.Update(Restaurant);
+                restaurantData.Commit();
+            }
+            Cuisines = htmlHelper.GetEnumSelectList<CuisineType>();
+            return Page(); 
         }
     }
 }
