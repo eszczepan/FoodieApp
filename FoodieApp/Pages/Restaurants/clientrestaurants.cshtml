@@ -1,0 +1,16 @@
+﻿@page
+@{ 
+    ViewData["Title"] = "Client";
+}
+
+<h2>Client Restaurants</h2>
+
+@section Scripts {
+    <script>
+        $(function () {
+            $.ajax("/api/Restaurants", { method: "get" }).then(function (response) {
+                console.log(response);
+            });
+        });
+    </script>
+}
